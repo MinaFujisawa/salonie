@@ -24,7 +24,7 @@ public class Driver {
         
         System.out.println();
         
-        //switchs display HairSalon or NailSalon
+        //switchs display - HairSalon or NailSalon
         test.switchSalonType(HairSalon.class);
     }
 }

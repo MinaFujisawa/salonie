@@ -10,8 +10,8 @@ package Project1;
  * @author MinaFujisawa
  */
 abstract public class SalonsInfo {
-
-    protected String salonName, address, star, dollLabel;
+    private String star, dollLabel;
+    protected String salonName, address;
     protected int salonNum, review, reviewNum;
     protected double price;
     protected boolean favod = false;
@@ -26,7 +26,7 @@ abstract public class SalonsInfo {
         this.reviewNum = reviewNum;
     }
 
-    public String dollLabel() {
+    private String dollLabel() {
         if (0 < price && price <= 20) {
             dollLabel = "$";
         } else if (20 < price && price <= 40) {
@@ -39,7 +39,7 @@ abstract public class SalonsInfo {
         return dollLabel;
     }
 
-    public String star() {
+    private String star() {
         switch (review) {
             case 1:
                 star = "★";

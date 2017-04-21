@@ -44,7 +44,7 @@ public class Salons implements Favorable {
 //        
         // sets salonNum
         for (int i = 0; i < salonList.size(); i++) {
-            salonList.get(i).SalonNum = i + 1;
+            salonList.get(i).salonNum = i + 1;
         }
 
     }
@@ -61,7 +61,7 @@ public class Salons implements Favorable {
     public void favo(int getSalonNum, boolean favo) {
 
         for (int i = 0; i < salonList.size(); i++) {
-            if (salonList.get(i).SalonNum == getSalonNum) {
+            if (salonList.get(i).salonNum == getSalonNum) {
                 if (favo) {
                     salonList.get(i).favod = true;
                     System.out.println("Favorite added");
