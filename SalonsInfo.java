@@ -12,12 +12,12 @@ package Project1;
 abstract public class SalonsInfo {
 
     protected String salonName, address, star, dollLabel;
-    protected int SalonNum, review, reviewNum;
+    protected int salonNum, review, reviewNum;
     protected double price;
     protected boolean favod = false;
 
-    public SalonsInfo(int SalonNum, String salonName, String address, double price, boolean favo, int review, int reviewNum) {
-        this.SalonNum = SalonNum;
+    public SalonsInfo(int salonNum, String salonName, String address, double price, boolean favo, int review, int reviewNum) {
+        this.salonNum = salonNum;
         this.salonName = salonName;
         this.address = address;
         this.price = price;
@@ -63,7 +63,7 @@ abstract public class SalonsInfo {
     }
 
     public String toString() {
-        String result = "salon No. " + SalonNum + "\n";
+        String result = "salon No. " + salonNum + "\n";
         result += "salon name : " + salonName + "\n";
         result += "price : " + dollLabel() + "\n";
         result += "address : " + address + "\n";
