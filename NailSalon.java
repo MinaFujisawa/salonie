@@ -11,8 +11,6 @@ package Project1;
  */
 public class NailSalon extends SalonsInfo {
 
-    protected boolean makeUp;
-
     public NailSalon(int SalonNum, String salonName, String address, double price, boolean favo, int review, int reviewNum) {
         super(SalonNum, salonName, address, price, favo, review, reviewNum);
     }

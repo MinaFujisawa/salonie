@@ -10,6 +10,7 @@ package Project1;
  * @author MinaFujisawa
  */
 abstract public class SalonsInfo {
+
     private String star, dollLabel;
     protected String salonName, address;
     protected int salonNum, review, reviewNum;
@@ -33,7 +34,7 @@ abstract public class SalonsInfo {
             dollLabel = "$$";
         } else if (40 < price && price <= 60) {
             dollLabel = "$$$";
-        } else if (60 < price && price <= 80) {
+        } else if (60 < price) {
             dollLabel = "$$$$";
         }
         return dollLabel;
@@ -74,5 +75,4 @@ abstract public class SalonsInfo {
         return result;
     }
 
-    
 }

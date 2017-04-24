@@ -18,7 +18,6 @@ public class SalonTypeSwitch {
                 System.out.println(list.salonList.get(i));
                 System.out.println("---------------------------------------");
             }
-           
         }
     }
 }
